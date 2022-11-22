@@ -1,44 +1,31 @@
-from django.shortcuts import redirect
-from django.shortcuts import render
-from django.contrib.auth.models import User
+from django.shortcuts import render, redirect
 from django.views.generic.base import View
-from perfis.models import Perfil
 from usuarios.forms import RegistrarUsuarioForm
+from django.contrib.auth.models import User
+from perfis.models import Perfil
 
 class RegistrarUsuarioView(View):
 
-    template_name = 'registrar.html'
+	template_name = 'registrar.html'
 
-    def get(self, request):
-        return render(request, self.template_name)
+	def get(self, request):
+		return render(request, self.template_name)
 
-def post(self, request):
+	def post(self, request):
+		form = RegistrarUsuarioForm(request.POST)
+		if form.is_valid():
+			dados_form = form.data
+			usuario = User.objects.create_user(dados_form['nome'],\
+											dados_form['email'],\
+											dados_form['senha'])
+			perfil = Perfil(nome=dados_form['nome'],							
+							telefone=dados_form['telefone'],
+							nome_empresa=dados_form['nome_empresa'],
+							usuario=usuario)
+			perfil.save()
+			return redirect('index')
 
-    #preenche o from
-    form = RegistrarUsuarioForm(request.POST)
+		return render(request, self.template_name, {'form' : form})
 
-    #verifica se eh valido
-    if form.is_valid():
-
-        dados_form = form.data
-
-    #cria o usuario
-        usuario = User.objects.create_user(dados_form['nome'], dados_form['email'], dados_form['senha'])            
-
-    #cria o perfil
-        perfil = Perfil(nome=dados_form['nome'],
-                            telefone=dados_form['telefone'],
-                            nome_empresa=dados_form['nome_empresa'],
-                            usuario=usuario)
-
-    #grava no banco
-        perfil.save()
-
-    #redireciona para index
-        return redirect('index')
-
-        #so chega aqui se nao for valido
-        #vamos devolver o form para mostrar o formulario preenchido 
-    return render(request, self.template_name, {'form' : form})
 
 # Create your views here.
