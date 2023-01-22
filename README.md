@@ -93,7 +93,7 @@ Objetivo: A origem do projeto, desenvolvido por estudantes do curso de Tecnologi
 
 12. Acesse o seguinte link:
 
-    		mateuscopier.pythonanywhere.com
+    	mateuscopier.pythonanywhere.com
 
 -----------------------------------------------------------------------------------
 
