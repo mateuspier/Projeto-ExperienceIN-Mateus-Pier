@@ -19,7 +19,7 @@ Objetivo: A origem do projeto, desenvolvido por estudantes do curso de Tecnologi
 
 • Python 3.7.9
 • Django 2.2
-• PIP3
+• PIP3 (gerenciador de pacotes do Python)
 • Visual Studio Code 1.69
 • PythonAnywhere (Back-end)
 
