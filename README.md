@@ -83,13 +83,13 @@ Objetivo: A origem do projeto, desenvolvido por estudantes do curso de Tecnologi
 		python manage.py makemigrations
 		python manage.py migrate
 
-9. Configure o PythonAnywhere: Vá para a seção Web do PythonAnywhere e configure a Web App para usar o seu ambiente virtual e o diretório do projeto.
+9. Vá para a seção Web do PythonAnywhere e configure a Web App para usar o seu ambiente virtual e o diretório do projeto.
 
 10. Rode o servidor de desenvolvimento: Dentro do ambiente virtual, vá para a pasta do projeto e rode o comando abaixo para iniciar o servidor de desenvolvimento:
 
 		"python manage.py runserver" 
 
-11. Configure o endereço IP e a porta: Configure o endereço IP e a porta no PythonAnywhere para que o servidor possa ser acessado através da internet.
+11. Configure o endereço IP e a porta no PythonAnywhere para que o servidor possa ser acessado através da internet.
 
 12. Acesse o seguinte link:
 
@@ -157,3 +157,11 @@ O projeto contou com a produção e realização do estudante Mateus Santos, alu
 • Integração com inteligência artificial: Adicionar recursos de inteligência artificial, para melhorar a experiência do usuário e tornar o projeto mais inteligente e personalizado.
 
 • Integração com Chatbot: Adicionar recursos de chatbot, permitindo que os usuários interajam com o projeto através de conversas naturais, e ajudando-os a encontrar informações ou realizar tarefas de forma rápida e eficiente.
+
+-----------------------------------------------------------------------------------
+
+## Documentação e referências
+
+• Documento de implantação disponível em: 
+
+	https://1drv.ms/w/s!Al1AOjE3FP3-gaoDQA_4PAm4ZrAnMQ?e=DYLgy5
