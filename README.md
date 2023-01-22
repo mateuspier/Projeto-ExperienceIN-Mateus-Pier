@@ -76,7 +76,7 @@ Objetivo: A origem do projeto, desenvolvido por estudantes do curso de Tecnologi
 
 		"django-admin startproject nome_do_projeto"
 
-7. Edite o arquivo settings.py: Edite o arquivo settings.py do seu projeto e adicione as configurações do banco de dados que você criou anteriormente.
+7. Edite o arquivo settings.py do projeto e adicione as configurações do banco de dados que criadas anteriormente.
 
 8. Rode as migrações: Dentro do ambiente virtual, vá para a pasta do projeto e rode o comando:
 
